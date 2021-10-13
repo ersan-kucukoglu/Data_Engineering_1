@@ -1,0 +1,82 @@
+{
+   "University":[
+      {
+         "Students":[
+            {
+               "Student_id":1,
+               "First_Name":"Ali",
+               "Last_Name":"Sial",
+               "Program":"Business Analytics"
+            },
+            {
+               "Student_id":2,
+               "First_Name":"Aftab",
+               "Last_Name":"Alam",
+               "Program":"Economics"
+            },
+            {
+               "Student_id":3,
+               "First_Name":"Ersan",
+               "Last_Name":"Kucukoglu",
+               "Program":"Business Analytics"
+            },
+            {
+               "Student_id":4,
+               "First_Name":"Xibei",
+               "Last_Name":"Chen",
+               "Program":"Finance"
+            }
+         ]
+      },
+      {
+         "Programs":[
+            {
+               "Program_id":1,
+               "Program_Name":"Business Analytics",
+               "Program_Coordinator":"Eszter Fuchs",
+               "Program_Location":"Budapest"
+            },
+            {
+               "Program_id":2,
+               "Program_Name":"Economics",
+               "Program_Coordinator":"Zsuzsanna Bordás ",
+               "Program_Location":"Vienna"
+            },
+            {
+               "Program_id":3,
+               "Program_Name":"Finance",
+               "Program_Coordinator":"Anita Apor",
+               "Program_Location":"Budapest"
+            }
+         ]
+      },
+      {
+         "Courses":[
+            {
+               "Course_id":1,
+               "Course_Name":"DE1",
+               "Course_Instructor":"Laszlo Sallo",
+               "Program_Coordinator":"Eszter Fuchs"
+            },
+            {
+               "Course_id":2,
+               "Course_Name":"DA1",
+               "Course_Instructor":"Gabor Bekes",
+               "Program_Coordinator":"Eszter Fuchs"
+            },
+            {
+               "Course_id":3,
+               "Course_Name":"Econometrics",
+               "Course_Instructor":"Robert Lieli",
+               "Program_Coordinator":"Zsuzsanna Bordás"
+            },
+            {
+               "Course_id":4,
+               "Course_Name":"Fintech",
+               "Course_Instructor":"Tomy Lee",
+               "Program_Coordinator":"Anita Apor"
+            }
+         ]
+      }
+   ]
+}
