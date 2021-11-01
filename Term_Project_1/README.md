@@ -246,6 +246,7 @@ FROM Movies_Performance
 group by genre
 order by Sum_Profit desc;
 ```
+![Genre Ranking](https://github.com/ersan-kucukoglu/Data_Engineering_1/blob/main/Term_Project_1/genre_ranking.png)
 - What are the top 50 movies by movie profit?
 ```
 DROP VIEW IF EXISTS Top_50Movies;
@@ -268,6 +269,7 @@ using(genre)
 order by Movie_profit desc
 Limit 50;
 ```
+![Top 50 Movies](https://github.com/ersan-kucukoglu/Data_Engineering_1/blob/main/Term_Project_1/top50_movies.png)
 - What are the top 10 movies above average rating and profit?
 ```
 DROP VIEW IF EXISTS top10_above_avg;
@@ -282,6 +284,7 @@ From Top_50movies
 where movie_rating>=Avg_rating_genre and movie_profit>=movie_profit
 limit 10;
 ```
+![Top 10 Movies Above Average](https://github.com/ersan-kucukoglu/Data_Engineering_1/blob/main/Term_Project_1/top10_movies_above_avg.png)
 - Who are the top 10 highest-net worth African American actors?
 ```
 DROP VIEW IF EXISTS TOP10_AfricanAmericanActorsByNetWorth;
@@ -295,6 +298,7 @@ FROM Actors_Performance
 WHERE Ethnicity='African American' 
 ORDER BY NetWorth_$ DESC
 LIMIT 10;
+![Top 10 Actors African American](https://github.com/ersan-kucukoglu/Data_Engineering_1/blob/main/Term_Project_1/top10_actors_africanAmerican.png)
 ```
 - Who are the top 10 actors with the highest main role?
 ```
@@ -312,3 +316,4 @@ GROUP BY ActorID
 ORDER BY total_Nof_main_characters DESC,NetWorth_$ desc
 LIMIT 10;
 ```
+![Top 10 Famous Actors](https://github.com/ersan-kucukoglu/Data_Engineering_1/blob/main/Term_Project_1/top10_FamousActors.png)
