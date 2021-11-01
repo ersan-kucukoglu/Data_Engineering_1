@@ -157,7 +157,7 @@ I used Actors data warehouse to extract the data top 10 actors which have the hi
 To find the top 10 famous actor with the highest number of main roles which credit order is one, I used Actors data warehouse. It can be found by counting the characters for which the credit order value is 1 for each actor and grouping them with the actorID and sorting them according to the total number of main roles.
 
 ## ANALYTICAL LAYER
-In the Analytical layer, I created Movies_Performance and Actors_Performance data warehouses by creating stored procedures inside which used commands to extract, transform and load the data into the tables; and by joining the variables which are needed for analysis from three tables into one table.
+In the Analytical layer, I created denormalized data structured Movies_Performance and Actors_Performance data warehouses using the operatioanal layer and by creating stored procedures inside which used commands to extract, transform and load the data into the tables; and by joining the variables which are needed for analysis from three tables into one table.
 - ACTORS PERFORMANCE
 ```
 DROP PROCEDURE IF EXISTS GetActorsPerformance;
