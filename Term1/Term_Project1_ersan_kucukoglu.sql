@@ -174,8 +174,9 @@ SELECT
         m.budget,
         m.gross,
         gross-budget AS Movie_Profit,
-        a.name AS Main_Actor,
+		a.name AS Main_Actor,
         c.Character_name AS Main_Character
+
 FROM movies m
 LEFT JOIN characters c
 using (MovieID)
