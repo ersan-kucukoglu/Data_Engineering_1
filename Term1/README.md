@@ -20,7 +20,7 @@ The dataset can be viewed by clicking on the dataset subheading.
 ---
 
 ## OPERATIONAL LAYER
-Creating the movie dataset, and creating movies,actors and characters tables inside the created movie schema and import data in those tables:
+Creating the movie dataset, and creating movies,actors and characters tables inside the created movie schema and import data in those tables: Click the arrows below to see queries of operatioanl layer.
 <details>
 <summary>Create Movie Schema</summary>
 <pre> 
@@ -221,7 +221,7 @@ Call GetMoviesPerformance;
 
 
 ## DATAMARTS/VIEWS
-I created views as data marts which are the subset of the data warehouse prepared for BI operations to find answers to the analytical questions.
+I created views as data marts which are the subset of the data warehouse prepared for BI operations to find answers to the analytical questions. Click the arrows below to see queries of data marts.
 
 <details>
 <summary>What is the movie genre ranking list?</summary>
@@ -241,6 +241,7 @@ order by avg_rating desc;
 </pre>
 </details>
 
+The aim of the showing this view is to observe the specification for each movie genre and to ensure that users have an idea about the movie genre in terms of quality in their minds. For that, I decided to measure genre quality with rating and profit data.Thus, I took average movie rating and average profit grouped by genre.
 
 <details>
 <summary> What are the top 50 movies by rating?</summary>
@@ -265,6 +266,7 @@ Limit 50;
 </pre>
 </details>
 
+In this view the users can see the top 50 movies. This view consists the names of the movies,genre,release date,mpaa rating,movie rating,profit which is ordered by movie rating. In case of the same movie rating, it is ordered by movie profit.
 
 <details>
 <summary>  What are the most popular 20 movies?</summary>
@@ -286,7 +288,7 @@ limit 20;
 </pre>
 </details>
 
-
+Besides the top 50 movies, I decided to show the most popular movies by profit because the popularity is about how much the audience demands and watches the movie, so the movie with high profit value is popular.
 
 <details>
 <summary> Who are the top 10 actors with the highest main role?</summary>
@@ -310,4 +312,5 @@ LIMIT 10;
 </pre>
 </details>
 
+The users can see the most famous 10 actors with the 4th view. In this view the actors name ordered by the total number of main roles for each actor which is credit order is one.
 
