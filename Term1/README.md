@@ -236,8 +236,7 @@ FROM Movies_Performance
 group by genre
 order by avg_rating desc;
 
-
-![Genre Ranking]()
+![Genre Ranking](https://github.com/ersan-kucukoglu/Data_Engineering_1/blob/main/Term1/genre.png)
 
 </pre>
 </details>
@@ -260,10 +259,12 @@ FROM movies_performance
 group by movieid
 order by Movie_Rating desc,movie_profit desc
 Limit 50;
+
+![Top 50 Movies](https://github.com/ersan-kucukoglu/Data_Engineering_1/blob/main/Term1/top50_movies.png)
+
 </pre>
 </details>
 
-![Top 50 Movies](https://github.com/ersan-kucukoglu/Data_Engineering_1/blob/main/Term1/top50_movies.png)
 
 <details>
 <summary>  What are the most popular 20 movies?</summary>
@@ -279,10 +280,12 @@ Select
 From movies_performance
 order by Movie_Profit desc
 limit 20;
+
+![Top 20 Popular Movies](https://github.com/ersan-kucukoglu/Data_Engineering_1/blob/main/Term1/top20_popular_movies.png)
+
 </pre>
 </details>
 
-![Top 20 Popular Movies](https://github.com/ersan-kucukoglu/Data_Engineering_1/blob/main/Term1/top20_popular_movies.png)
 
 
 <details>
@@ -301,7 +304,10 @@ where creditOrder=1
 GROUP BY ActorID,Actor_Name,gender,Ethnicity,NetWorth_$
 ORDER BY total_Nof_main_roles DESC,NetWorth_$ desc
 LIMIT 10;
+
+![Top 10 Famous Actors](https://github.com/ersan-kucukoglu/Data_Engineering_1/blob/main/Term1/top10_FamousActors.png)
+
 </pre>
 </details>
 
-![Top 10 Famous Actors](https://github.com/ersan-kucukoglu/Data_Engineering_1/blob/main/Term1/top10_FamousActors.png)
+
