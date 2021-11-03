@@ -229,16 +229,19 @@ I created views as data marts which are the subset of the data warehouse prepare
 DROP VIEW IF EXISTS Genre_ranking;
 CREATE VIEW `Genre_ranking` AS
 SELECT genre,
-count(Movie_title) AS Total_Movies,
+count(distinct Movie_title) AS Total_Movies,
 ROUND(sum(Movie_Rating)/count(Movie_Rating),2) AS avg_rating,
 ROUND(sum(movie_profit)/count(movie_profit)) AS Avg_Profit
 FROM Movies_Performance
 group by genre
 order by avg_rating desc;
+
+
+![Genre Ranking]()
+
 </pre>
 </details>
 
-![Genre Ranking](https://github.com/ersan-kucukoglu/Data_Engineering_1/blob/main/Term1/genre_ranking.png)
 
 <details>
 <summary> What are the top 50 movies by rating?</summary>
