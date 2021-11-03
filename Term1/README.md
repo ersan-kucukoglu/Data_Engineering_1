@@ -1,4 +1,4 @@
-|[Go to Term1 folder](https://github.com/ersan-kucukoglu/Data_Engineering_1/tree/main/Term1)|
+|[Go to Project Folder](https://github.com/ersan-kucukoglu/Data_Engineering_1/tree/main/Term1)|
 |---|
 # MOVIES SQL PROJECT
  In this term project for Data Engineering 1, I created schema on MySQL using the Movies Dataset which contains 614 movies between 1989 and 2019, which can be found on [data.world](https://data.world/jamesgaskin/movies).
